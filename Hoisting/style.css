@@ -1,0 +1,17 @@
+.myproduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.myproduct a{
+    width: 80px;
+    height: 30px;
+    background-color: navy;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
