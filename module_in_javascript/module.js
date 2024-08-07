@@ -47,3 +47,8 @@ console.log(undefined == null)
 //false because of value equality and type equality checking
 console.log(null === undefined)
 
+
+//eval method is used to solve string type mathematical expression and gives output a number
+const x = 10
+const calculation = eval("x*2+5")
+console.log(calculation)
