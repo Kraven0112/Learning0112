@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <style>
+        *{
+            font-family: sans-serif;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+        body{
+            min-height: 100vh;
+            background-color:rgba(107, 239, 195, 0.217);
+        }
+        h2::before{
+            content: "# ";
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event loupe is asynchronous operation in javscript.</h1>
+    <h2>call stack is mechanism in javascript provided by web browser to track the functions which is running and which can be executed first.</h2>
+    <h2>setTimeout(function(){}) and setTimeout(function xyz(){}) the main difference between these two ways are reuse of function.</h2>
+    <h2>If we use anonymous function we cannot reuse it anywhere, because it will be specified for where it is declared.</h2>
+    <h2>If we use named function we can reuse it anywhere according to its scope.</h2>
+    <h2>So the use of event loop is to push the operation from callback queue to call-stack</h2>
+    <h2>All the promise related tasks are set in microtask queue.</h2>
+    <h2>callback queue is also known as task queue.</h2>
+    <h2>There are two types of task queue :> microtask queue and macrotask queue.</h2>
+    <h2>microtask operations are like promises,mutation observers.</h2>
+    <h2>macrotask operations are like setTimeout,setInterval,DOM events,Network requests</h2>
+    <h2>In event loop microtasks get more priority than macrotasks while performing asynchronous operations.</h2>
+    <h2>All the callback functions which come through promise are related to microtask-queue.</h2>
+    <h2>microtasks have higher priority than macrotasks.</h2>
+</body>
+</html>
