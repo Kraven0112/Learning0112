@@ -141,3 +141,27 @@ const diameter = function(radius){
 // console.log(myname.capitalForm())
 // console.log(myname.smallForm())
 // console.log("i am from nepal".capitalForm())
+
+
+function get(){
+    return function my(){
+        console.log(x)
+    }
+}
+let x = 20
+const output = get()()
+console.log(window.x)
+
+
+function moon(){
+    function moon(){
+        console.log(x)
+    }
+    let x =20
+    moon()
+}
+moon()
+
+
+
+
