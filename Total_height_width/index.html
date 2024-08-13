@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 300px;
+            padding: 20px;
+            background-color: #2828c2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        const div = document.querySelector('.container')
+        const rectangle = div.getBoundingClientRect()
+
+        for(const key in rectangle){
+            if(typeof(rectangle[key]) !== "function"){
+                let para = document.createElement('p')
+                para.textContent = `${key} : ${rectangle[key]}`
+                document.body.append(para)
+            }
+        }
+        console.log(rectangle.height)
+        console.log(rectangle.width)
+        console.log(rectangle.right)
+        console.log(rectangle.left)
+        console.log(rectangle.top)
+        console.log(rectangle.bottom)
+    </script>
+</body>
+</html>
