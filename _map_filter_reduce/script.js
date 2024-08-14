@@ -114,3 +114,8 @@ const output = users.reduce(function(acc,curr){
 },{})
 
 console.log(output)
+
+const arr = [2,4,6,8,2,4,6,8];
+
+const uniVal = arr.filter((el,ind) => arr.indexOf(el) === ind)
+console.log(uniVal);
