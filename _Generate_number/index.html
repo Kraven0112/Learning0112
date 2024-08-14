@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Generate number according to the user input</h2>
+    <input type="text" placeholder="Enter number" id="enter">
+    <button id="generate">Generate</button>
+    <p id="output"></p>
+
+    <script>
+        let inputValue = document.querySelector('#enter')
+        let generateBtn = document.querySelector('#generate')
+        let output = document.querySelector('#output')
+
+        generateBtn.addEventListener('click',(event)=>{
+            let number = Number(inputValue.value)
+            let stringNum = ""
+            for(let i=1; i<=number; i++){
+                stringNum+=Math.floor(Math.random()*10)
+            }
+            output.innerHTML = Number(stringNum)
+        })
+    </script>
+</body>
+</html

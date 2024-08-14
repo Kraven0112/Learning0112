@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <style>
+        *{
+            font-family: sans-serif;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+        #myorder{
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            border: 1px solid #000;
+            margin-inline: auto;
+        }
+        #myorder p{
+            font-size: 20px;
+        }
+        .buttons{
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+            margin-inline: auto;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        .buttons button{
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Small promise project </h2>
+    <h3>first -> makeOrder</h3>
+    <h3>second -> proceedPayment</h3>
+    <h3>third -> showOrderSummary</h3>
+    <h3>fourth -> updateWallet</h3>
+
+    <div id="myorder">
+        <h1 style="text-decoration-line: underline;">About your Order</h1>
+        <p id="cart-id"></p>
+        <p id="summary"></p>
+        <p id="payment"></p>
+        <p id="wallet"></p>
+    </div>
+    <div class="buttons">
+        <button id="order">Order</button>
+    </div>
+</body>
+</html>
