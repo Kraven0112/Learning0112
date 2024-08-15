@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <style>
+        *{
+            font-family: sans-serif;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+        strong{
+            text-decoration-line: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Promise API in javascript.</h2>
+
+    <h3><strong>Promise.all()</strong> =>In this case if all the promises are resolved then all the promises are fulfilled. If one of the promises gets rejected then it will return the error. </h3>
+
+    <h3><strong>Promise.allSettled()</strong> => return array of promise if all are resolved . Also give the array of promises even promises get rejected</h3>
+
+    <h3><strong>Promise.race()</strong> => This promise method return single promise as a value which can be resolved first. It depends on the time of promise which can be resolved first.</h3>
+
+    <h3><strong>Promise.any()</strong> => This method is success seeker api. Returns single promise. If all promises are rejected it gives aggregated error. Aggregate error means array of errors. It waits for first Settled success.</h3>
+
+    <h3>Settled means resolve as well as reject, success as well as failure and fulfilled as wel as rejected.</h3>
+</body>
+</html>
