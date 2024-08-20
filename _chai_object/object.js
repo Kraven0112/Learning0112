@@ -59,11 +59,35 @@ const objs = {
     [mySym]:"mysymbol"
 }
 objs.greet = function(){
-    console.log("Hello users")
+    // console.log("Hello users")
     return "from function"
 }
 
-console.log(typeof objs[mySym])
-console.log(objs.greet())
+// console.log(typeof objs[mySym])
+// console.log(objs.greet())
 
 
+
+const user1 = {
+    username1:"Mukesh Ambani",
+    age1:21,
+    country1:"Indai"
+}
+
+const user2 = {
+    username2:"Anurag Thakurathi",
+    age2:26,
+    country2:"Nepal"
+}
+
+const user3 = {
+    username3:"Resham Chaudhary",
+    age3:22,
+    country3:"Nepal"
+}
+
+const output1 ={...user1,...user2,...user3}
+const output2 = Object.assign({},user1,user2,user3)
+
+console.log(output1)
+console.log(output2)
