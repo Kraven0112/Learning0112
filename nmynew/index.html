@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const numbers = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6]
+      const unique = []
+      for (let i = 0; i < numbers.length; i++) {
+        if (!unique.includes(numbers[i])) {
+          unique.push(numbers[i])
+        }
+      }
+      /* 
+      In javascript null , NaN , undefined ,"" , false , 0 are the falsy value. 
+      In javscript "" (empty string also give the false value)*/
+    </script>
+  </body>
+</html>
